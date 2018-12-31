@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.elabram.lm.wmsmobile">
+    package="com.elabram.lm.wmshwnp">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -20,10 +22,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".CheckinV1Activity"
+            android:name=".checkin.CheckinV1Activity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".login.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeWhite">
             <intent-filter>
@@ -46,7 +48,7 @@
             android:name=".AboutActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ChangePasswordActivity"
+            android:name=".change_password.ChangePasswordActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".FeedbackActivity"
@@ -55,6 +57,7 @@
             android:name=".PerformanceChartActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".SplashFirstActivity" />
+        <activity android:name=".BaseActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
@@ -70,9 +73,19 @@
 
         <service android:name=".utilities.GPSTracker" />
 
+        <!-- JobService -->
+        <service
+            android:exported="false"
+            android:name=".utilities.MyJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+
         <provider
             android:name=".utilities.GenericFileProvider"
-            android:authorities="${applicationId}.com.elabram.lm.wmsmobile"
+            android:authorities="com.elabram.lm.wmshwnp"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

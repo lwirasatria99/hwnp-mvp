@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WMS Mobile</string>
+    <string name="app_name">WMS MVP</string>
     <!--<string name="map_api">AIzaSyBELmC1DfToTVsvVpR2ohoLLP7OzfCf7V0</string>-->
     <string name="map_api">AIzaSyDOR_rnS2AvDi2LRiAqQFqpExZJnQtnYrI</string>
     <!--<string name="map_api">AIzaSyDvfN2E32E5jb1I9lAs8VGFMFuCeBMJ3TY</string>-->

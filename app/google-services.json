@@ -8,6 +8,37 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:26945995084:android:4ab096ed32279500",
+        "android_client_info": {
+          "package_name": "com.elabram.lm.wmshwnp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26945995084-8ja3k5qs2frpa88ufij6j091hg5qkble.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkaOXuHj5u1pAOs_5mykhUPiTfa8A76jo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:26945995084:android:92c880d3384feed9",
         "android_client_info": {
           "package_name": "com.elabram.lm.wmsmobile"

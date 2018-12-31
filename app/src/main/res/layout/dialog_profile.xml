@@ -31,20 +31,21 @@
                 app:cardElevation="0dp"
                 app:cardPreventCornerOverlap="false">
 
-                <ImageView
+                <com.mikhaellopez.circularimageview.CircularImageView
                     a:id="@+id/iv_profile_dialog"
                     a:layout_width="match_parent"
                     a:layout_height="match_parent"
                     a:scaleType="centerInside"
+                    app:srcCompat="@drawable/profile_default_picture"
                     tools:ignore="ContentDescription" />
 
                 <ImageView
-                    a:visibility="visible"
                     a:id="@+id/ivChangePicture"
                     a:layout_width="20dp"
                     a:layout_height="20dp"
                     a:layout_gravity="bottom|end"
                     a:src="@mipmap/ic_photo_camera_orange"
+                    a:visibility="invisible"
                     tools:ignore="ContentDescription" />
 
             </android.support.v7.widget.CardView>

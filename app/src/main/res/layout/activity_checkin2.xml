@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:theme="@style/AppThemeFont"
-    tools:context="com.elabram.lm.wmsmobile.CheckinActivity">
+    tools:context="com.elabram.lm.wmshwnp.CheckinActivity">
 
     <!-- Toolbar -->
     <RelativeLayout

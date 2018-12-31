@@ -7,7 +7,7 @@ def supportVersion = '27.1.1'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.elabram.lm.wmsmobile"
+        applicationId "com.elabram.lm.wmshwnp"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 8
@@ -66,8 +66,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     // firebase & crashlytics
-    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.4'
-    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.5'
+    implementation 'com.google.firebase:firebase-core:16.0.3'
 
     // circle imageview
     //implementation 'de.hdodenhof:circleimageview:2.2.0'
@@ -82,4 +82,7 @@ dependencies {
 
     // compressor
     implementation 'id.zelory:compressor:2.1.0'
+
+    // job dispatcher
+    implementation 'com.firebase:firebase-jobdispatcher:0.8.5'
 }

@@ -42,47 +42,46 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/relative_information"
-        android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize"
-        android:layout_below="@+id/header"
-        android:layout_marginTop="@dimen/space_15"
-        android:background="@color/white"
-        android:elevation="@dimen/size_toolbar_shadow"
-        tools:targetApi="lollipop">
-
-        <LinearLayout
-            android:id="@+id/linear_year"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_year"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/ubuntu_bold"
-                android:text="2018"
-                android:textColor="@color/black"
-                android:textSize="25sp"
-                tools:ignore="HardcodedText" />
-
-        </LinearLayout>
-
-    </RelativeLayout>
-
-    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/relative_information">
+        android:layout_below="@+id/header">
+
+        <RelativeLayout
+            android:id="@+id/relative_information"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/white"
+            android:elevation="@dimen/size_toolbar_shadow"
+            tools:targetApi="lollipop">
+
+            <LinearLayout
+                android:id="@+id/linear_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="2018"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
 
         <LinearLayout
+            android:layout_below="@+id/relative_information"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <com.elabram.lm.wmsmobile.utilities.VerticalTextView
+            <com.elabram.lm.wmshwnp.utilities.VerticalTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start|center_vertical"

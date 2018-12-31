@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:theme="@style/AppThemeFont">
+
+    <!-- Logo -->
+    <RelativeLayout
+        android:id="@+id/containerLogo"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_rms"
+            tools:ignore="ContentDescription" />
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/image_logo"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:fontFamily="@font/ubuntu_bold"-->
+            <!--android:text="Workfoce Management System"-->
+            <!--android:textColor="@color/blue"-->
+            <!--android:textSize="18sp"-->
+            <!--tools:ignore="HardcodedText"-->
+            <!--tools:targetApi="jelly_bean" />-->
+
+    </RelativeLayout>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageBackground"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:paddingTop="240dp"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/login_page_500_100"-->
+        <!--tools:ignore="ContentDescription" />-->
+
+    <!-- Form -->
+    <LinearLayout
+        android:layout_below="@+id/containerLogo"
+        android:id="@+id/formLayout"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        tools:targetApi="lollipop">
+
+        <!-- Username -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/square_cornerfull_white"
+            android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/user"
+                android:contentDescription="icPassword"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/ubuntu_light"
+                android:hint="Email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingEnd="5dp"
+                android:paddingLeft="35dp"
+                android:paddingRight="5dp"
+                android:paddingStart="35dp"
+                android:text=""
+                android:textColorHint="@color/blue"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText"
+                tools:targetApi="lollipop" />
+
+        </RelativeLayout>
+
+        <!-- Password -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/square_cornerfull_white"
+            android:elevation="3dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/pass"
+                android:contentDescription="icPassword"
+                tools:ignore="HardcodedText" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/etPasswordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/blue"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:hint="Password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingEnd="5dp"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="5dp"
+                    android:paddingStart="35dp"
+                    android:text=""
+                    android:textColorHint="@color/blue"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="lollipop" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_button_blue"
+            android:elevation="3dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:paddingEnd="25dp"
+            android:paddingStart="25dp"
+            android:text="Login"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/formLayout"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Did you forget to login?"
+            />
+
+        <TextView
+            android:textStyle=""
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset your password here"
+            android:layout_marginLeft="5dp" />
+
+    </LinearLayout>
+
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/main_copyright"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:fontFamily="@font/ubuntu_light"-->
+        <!--android:gravity="center_horizontal|bottom"-->
+        <!--android:text="WMS by Elabram Systems"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="12sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:visibility="visible"-->
+        <!--tools:ignore="HardcodedText"-->
+        <!--tools:targetApi="jelly_bean" />-->
+
+</RelativeLayout>
+
+

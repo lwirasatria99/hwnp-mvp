@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/login_blue"
     android:theme="@style/AppThemeFont"
-    tools:context=".LoginActivity">
+    tools:context=".login.LoginActivity">
 
     <!-- Logo -->
     <LinearLayout
